@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+     <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header id="header">
+        <h2 class="logo">SHIVANI.</h2>
+
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-right">
+            <i class="fa-solid fa-moon" id="theme-toggle"></i>
+            <a href="image/My CV.pdf"  download class="btn cv-btn">Download CV</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home"  class="hero">
+        <div class="hero-img">
+            <img src="image/shivi.jpg" alt="profile">
+        </div>
+
+        <div class="hero-content">
+            <h3>Hello, I'm</h3>
+            <h1 class="gradient-text">SHIVANI KUMARI</h1>
+            <h2>And I'm a <span id="typing-text"></span></h2>
+
+            <p>
+                who enjoys designing modern and responsive
+          websites. I work with HTML, CSS, JavaScript, and React to build
+          interactive web applications. I'm always excited to learn new tools
+          and create meaningful digital experiences.
+            </p>
+
+            <!-- SOCIAL ICONS -->
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=100049518317246"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com/shivani_rai3334?t=-Exl5vKw-8u8oN296kt7xw&s=09"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/shivanirai_3334?igsh=MWV1Y2cyZHk3eG50NQ=="><i
+                                class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/shivani-kumari-644a71295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Shivanirai3334"><i class="fa-brands fa-github"></i></a>
+            </div>
+
+            <!-- BUTTONS -->
+            <div class="buttons">
+                
+                 <a href="mailto:shivanirai3132@gmail.com" class="btn primary">
+  Hire Me
+</a>
+                <a href="#contact" class="btn outline">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+<!-- -----------------------------ABOUT------------------------------- -->
+
+<section id="about">
+  <div class="resume-container">
+    <h1 class="resume-title">About Me</h1>
+
+    <!-- Tabs -->
+    <div class="tabs glass reveal">
+      <span class="tab-links active-link" onclick="opentab(event,'skills')">SKILLS</span>
+      <span class="tab-links" onclick="opentab(event,'experience')">EXPERIENCE</span>
+      <span class="tab-links" onclick="opentab(event,'education')">EDUCATION</span>
+      <span class="tab-links" onclick="opentab(event,'hobby')">HOBBY</span>
+    </div>
+
+    <!-- Content Box -->
+    <div class="tab-box glass">
+
+      <!-- SKILLS -->
+      <div class="tab-contents active-tab" id="skills">
+        <div class="card">
+          <h3>Programming Skills</h3>
+          <p>C, C++, Python, DSA</p>
+        </div>
+
+        <div class="card">
+          <h3>Web Development</h3>
+          <p>HTML, CSS, JavaScript, React (Basics)</p>
+        </div>
+
+        <div class="card">
+          <h3>Graphic Design</h3>
+          <p>Canva & Visual Creation</p>
+        </div>
+      </div>
+
+      <!-- EXPERIENCE -->
+      <div class="tab-contents" id="experience">
+        <div class="card">
+          <h3>Moxie Technical Club</h3>
+          <p>Organized technical events & workshops</p>
+        </div>
+
+        <div class="card">
+          <h3>Prakriti Club</h3>
+          <p>Worked in environmental awareness campaigns</p>
+        </div>
+
+        <div class="card">
+          <h3>IT Magazine</h3>
+          <p>Editor & Publisher</p>
+        </div>
+      </div>
+
+      <!-- EDUCATION -->
+      <div class="tab-contents" id="education">
+        <div class="card">
+          <h3>Btech (2023-2027)</h3>
+          <p>MIT Muzaffarpur, Bihar, India</p>
+        </div>
+
+        <div class="card">
+          <h3>Intermidiate (2019-2021)</h3>
+          <p>Sri Chaitanya Techno School Vishakhapatnam </p>
+        </div>
+
+        <div class="card">
+          <h3>Matriculation (2014-2019)</h3>
+          <p>Jawahar Navodaya Vidyalaya Rajgir Nalanda</p>
+        </div>
+      </div>
+
+      <!-- HOBBY -->
+      <div class="tab-contents" id="hobby">
+        <div class="card">
+          <h3>My Hobbies</h3>
+          <p>Designing, Coding, Learning new tech, Hackathons</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ----------------------------Skills----------------------- -->
+
+<section id="skills">
+  <div class="skills-container">
+    <h1 class="skills-title">My Skills</h1>
+
+    <div class="skills-box">
+
+      <!-- Programming -->
+      <div class="skill-card glass reveal">
+        <h2>Programming</h2>
+        <ul>
+          <li><i class="fa-solid fa-code"></i> C</li>
+          <li><i class="fa-solid fa-code"></i> C++</li>
+          <li><i class="fa-brands fa-python"></i> Python</li>
+          <li><i class="fa-solid fa-database"></i> SQL</li>
+          <li><i class="fa-solid fa-gears"></i> DSA</li>
+        </ul>
+      </div>
+
+      <!-- Web Development -->
+      <div class="skill-card">
+        <h2>Web Development</h2>
+        <ul>
+          <li><i class="fa-brands fa-html5"></i> HTML</li>
+          <li><i class="fa-brands fa-css3-alt"></i> CSS</li>
+          <li><i class="fa-brands fa-js"></i> JavaScript</li>
+          <li><i class="fa-brands fa-react"></i> React (Basics)</li>
+        </ul>
+      </div>
+
+      <!-- Tools -->
+      <div class="skill-card">
+        <h2>Tools</h2>
+        <ul>
+          <li><i class="fa-brands fa-github"></i> GitHub</li>
+          <li><i class="fa-solid fa-pen-nib"></i> Canva</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+     <!-- ----------------------------Projects----------------------------------------- -->
+    <section id="projects">
+        <div class="project-container">
+            <div class="project-title"><h1>PROJECTS</h1></div>
+      <div class="section-content">
+            <div class="work-list">
+                <div class="work glass reveal">
+                    <img src="image/work 1.png" alt="work 1">
+                    <div class="layer">
+                        <h3>Tic-Tac-Toe Game</h3>
+                        <p>"A classic Tic Tac Toe game built using HTML, CSS, and JavaScript. This project showcases my
+                            skills in web development and game development."
+                        </p>
+                        <a href="https://shivani-tic-tac-toe-game.netlify.app/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/work 2.png" alt="work 2">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>"This project showcases my understanding of web technologies and ability to build practical
+                            applications, such as a calculator, with a user-friendly interface."
+                        </p>
+                        <a href="https://shivani-calculator.netlify.app/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/work 3.png" alt="work 3">
+                    <div class="layer">
+                        <h3>QR code Generator</h3>
+                        <p>"A QR code generator built using HTML, CSS, and JavaScript, allowing users to create custom
+                            QR codes for various purposes."</p>
+                        <a href="https://shivani-qr-code-generator.netlify.app/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+          </div>
+            <a href="#" class="btn1">See more</a>
+        </div>
+    </section>
+
+
+   <!-- -----------------gallery-------------------------- -->
+
+
+   <section id="gallery">
+  <div class="skills-container">
+    <h1 class="skills-title">My Gallery</h1>
+
+    <div class="gallery-container" id="galleryContainer">
+      
+      <!-- Add class "hidden" after 6 images -->
+        <div class="gallery-item glass reveal">
+            <img src="image/1728991829895-certificate.png" alt="Certificate">
+        </div>
+        <div class="gallery-item">
+          <img src="image/WhatsApp Image 2026-03-18 at 8.30.49 PM.jpeg" alt="Certificate">
+        </div>
+        <div class="gallery-item">
+          <img src="image/WhatsApp Image 2026-03-18 at 8.10.59 PM.jpeg" alt="Certificate">
+        </div>
+        <div class="gallery-item">
+          <img src="image/WhatsApp Image 2026-03-18 at 8.12.10 PM.jpeg" alt="Certificate">
+        </div>
+        <div class="gallery-item">
+          <img src="image/WhatsApp Image 2026-03-18 at 8.12.38 PM.jpeg" alt="Certificate">
+        </div>
+        <div class="gallery-item">
+          <img src="image/WhatsApp Image 2026-03-18 at 8.13.18 PM.jpeg" alt="Certificate">
+        </div>
+     
+
+      <!-- hidden images -->
+   <div class="gallery-item hidden">
+          <img src="image/WhatsApp Image 2026-03-18 at 8.13.50 PM.jpeg" alt="Certificate">
+        </div>
+        <div class="gallery-item hidden">
+          <img src="image/WhatsApp Image 2026-03-18 at 8.14.18 PM.jpeg" alt="Certificate">
+        </div>
+        
+        <div class="gallery-item hidden">
+            <img src="image/WhatsApp Image 2024-10-16 at 11.58.28_17606db7.jpg" alt="Certificate">
+        </div>
+
+    </div>
+
+    <a href="#" class="btn1" id="seeMoreBtn">See more</a>
+  </div>
+</section>
+       
+    <!-- ---------------contact------------------- -->
+
+    <section id="contact">
+      <div class="contact-container">
+      <div class="contact-title"><h1>CONTACT</h1></div>
+      <div class="section-content">
+      <h3>Feel <b>FREE</b> to Contact Me</h3>
+      <br>
+      <p>
+        If you have any questions, project ideas, or collaboration
+        opportunities, I would be happy to hear from you. You can contact me
+        through the form below or by using the provided details. I look forward
+        to connecting with you.
+      </p>
+      <br>
+      </div>
+
+      <div class="section-content">
+        <div class="box glass reveal">
+      <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>shivanirai3132@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9113783546</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100049518317246"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com/shivani_rai3334?t=-Exl5vKw-8u8oN296kt7xw&s=09"><i
+                                class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/shivanirai_3334?igsh=MWV1Y2cyZHk3eG50NQ=="><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a
+                            href="https://www.linkedin.com/in/shivani-kumari-644a71295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="image/My CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+      <div class="contact-right">
+      <form name="submit-to-google-sheet">
+        <input type="text" name="Name" placeholder="Your Name" required />
+        <input type="email" name="Email" placeholder="Your Email" required />
+        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+        <button type="submit" class="btn btn2">Submit</button>
+        <p id="msg"></p>
+        
+      </form>
+      </div>
+      </div>
+</div>
+</div>
+    </section>
+    
+<!-- ---------------footer-------------- -->
+     <footer>
+      <div class="footer">
+         <div class="copyright">
+            <p>copyright shivani. Made by <i class="fa-solid fa-heart"></i> shivani kumari</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>
